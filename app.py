@@ -6,11 +6,7 @@ app = Flask(__name__)
 DB_NAME = "engagement.db"
 
 STUDENTS = [
-    "Alex Carter", "Jordan Lee", "Taylor Morgan", "Casey Nguyen",
-    "Riley Bennett", "Cameron Diaz", "Avery Brooks", "Morgan Patel",
-    "Dylan Rivera", "Skyler Adams", "Quinn Foster", "Parker Kim",
-    "Reese Turner", "Hayden Scott", "Logan Cruz", "Jamie Flores",
-    "Blake Simmons", "Dakota Reed", "Emerson Clark"
+    "John Cena"
 ]
 
 BASE_HTML = """
@@ -558,4 +554,4 @@ def dashboard():
 if __name__ == '__main__':
     init_db()
     seed_students()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port= 5000, debug=False)
